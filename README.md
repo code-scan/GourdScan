@@ -1,13 +1,13 @@
 # GourdScan
 
-±»¶¯Ê½×¢Èë¼ì²â¹¤¾ß
+è¢«åŠ¨å¼æ³¨å…¥æ£€æµ‹å·¥å…·
 
 
 #INSTALl
 ##Windows
-½âÑ¹Ö®ºóÔËĞĞ usbwebservercncn.exe¼´¿É
+è§£å‹ä¹‹åè¿è¡Œ usbwebservercncn.exeå³å¯
 ##Linux
-ÏÈ°²×°ºÃlamp,
+å…ˆå®‰è£…å¥½lamp,
 mysql
 ```sql
 create database pscan;
@@ -19,13 +19,16 @@ web
 ```sh
 mv root/* /var/www/html
 ```
-ĞŞ¸Ä ./proxy/isqlmap.py
+
+ä¿®æ”¹conn.phpä¸­çš„æ•°æ®åº“ä¿¡æ¯
+
+ä¿®æ”¹ ./proxy/isqlmap.py
 ```python
  self.webserver="http://localhost:88/"
 ```
-¸Ä³ÉÄã×Ô¼ºµÄÖ÷»úµØÖ·ºÍ¶Ë¿Ú¡£
+æ”¹æˆä½ è‡ªå·±çš„ä¸»æœºåœ°å€å’Œç«¯å£ã€‚
 
-ĞŞ¸Ä./proxy/task.py
+ä¿®æ”¹./proxy/task.py
 ```python
 def update():
     url="http://localhost:88/api.php?type=sqlmap_update"
@@ -34,28 +37,28 @@ def api_get():
     url="http://localhost:88/api.php?type=api_get"
     data=urllib2.urlopen(url).read()
 ```
-¸Ä³ÉÄãµÄhostµØÖ·
+æ”¹æˆä½ çš„hoståœ°å€
 
-#ÅäÖÃ
-´ò¿ª http://localhost:88/config.php ÔÚlistÀïÃæÌí¼Ósqlmapapi½Úµã
+#é…ç½®
+æ‰“å¼€ http://localhost:88/config.php åœ¨listé‡Œé¢æ·»åŠ sqlmapapièŠ‚ç‚¹
 
-¸ñÊ½Îª
+æ ¼å¼ä¸º
 ```
-http://127.0.0.1:8775 (²»ĞèÒª×îºóÒ»¸ö/)
+http://127.0.0.1:8775 (ä¸éœ€è¦æœ€åä¸€ä¸ª/)
 ```
 
-ä¯ÀÀÆ÷ÉèÖÃ´úÀí£¬²¢ÇÒÌí¼ÓÒ»¸öhttp header
+æµè§ˆå™¨è®¾ç½®ä»£ç†ï¼Œå¹¶ä¸”æ·»åŠ ä¸€ä¸ªhttp header
 ```
 User-Hash: youhash
 ```
-youhash¿ÉÒÔËæÒâÌîĞ´£¬Ö÷ÒªÓÃÓÚ·ÖÀà
-Èô²»ÌîĞ´Ä¬ÈÏÊÇ *cond0r*
+youhashå¯ä»¥éšæ„å¡«å†™ï¼Œä¸»è¦ç”¨äºåˆ†ç±»
+è‹¥ä¸å¡«å†™é»˜è®¤æ˜¯ *cond0r*
 
-¿ÉÒÔÔÚ
+å¯ä»¥åœ¨
 http://localhost:88/config.php
-²é¿´ÄãµÄ·ÖÀà£¬µã»÷·ÖÀàÃû³Æ¼´¿É²é¿´¡£
+æŸ¥çœ‹ä½ çš„åˆ†ç±»ï¼Œç‚¹å‡»åˆ†ç±»åç§°å³å¯æŸ¥çœ‹ã€‚
 
-#Ê¹ÓÃ
-Ê×ÏÈÔËĞĞsqlmapapi£¬²¢ÇÒÔÚconfigÀïÃæÔö¼ÓÒ»¸ö½Úµã
-Æä´Î¿ªÆôproxy/proxy_io.py
-È»ºóÔËĞĞproxy/task.py
+#ä½¿ç”¨
+é¦–å…ˆè¿è¡Œsqlmapapiï¼Œå¹¶ä¸”åœ¨configé‡Œé¢å¢åŠ ä¸€ä¸ªèŠ‚ç‚¹
+å…¶æ¬¡å¼€å¯proxy/proxy_io.py
+ç„¶åè¿è¡Œproxy/task.py
