@@ -13,11 +13,7 @@ class isqlmap:
         self.sqlmap_config={'tech':'BT','dbms':'mssql','user-agent':'x'}
         self.webserver="http://localhost:88/"
         self.sqlmapapi="http://127.0.0.1:8775"
-        #config_load=open('config.xml').read()
-        #self.black_ext=re.findall(r'<blackexts>(.*)</blackexts>',config_load)[0].split(",")
-        #self.black_domain=re.findall(r'<blackdomains>(.*)</blackdomains>',config_load)[0].split(",")
-        #self.white_ext=re.findall(r'<whiteext>(.*)</whiteext>',config_load)[0].split(",")         
-        self.header_agent='x'
+		self.header_agent='x'
         try:
             self.update_config()
         except:
