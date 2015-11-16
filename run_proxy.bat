@@ -1,0 +1,2 @@
+cd proxy
+run.bat

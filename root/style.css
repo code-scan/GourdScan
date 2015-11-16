@@ -1,0 +1,149 @@
+body,html {
+	margin:0px;
+	padding: 0px;
+	background: #2D649C url('images/background.jpg') repeat-x fixed top;
+}
+#container{
+	width: 920px;
+	left: 50%;
+	margin-left:-460px;
+	position:relative;
+	margin-top: 20px;
+}
+
+#header{
+	margin-left:9px;
+}
+
+#flag{
+	float:right;
+	margin-left:20px;
+}
+#flags{
+	float:right;
+	display:none;
+}
+#flc img{
+	cursor:hand;cursor:pointer;
+}
+#flc{
+	float:right;
+}
+
+#menu{	
+	clear:both;
+	display:block;
+	height: 38px;
+	margin:0px;
+	padding:0px;
+}
+#menu li{
+	margin:0px;
+	padding:0px;
+	display:block;
+	float:right;
+	height:38px;
+	margin-left:1px;
+}
+
+#menua{
+	display:block;
+	float:left;
+	height:12px;
+	font-size:12px;
+	padding:13px;
+	margin:0px;
+	text-decoration:none;
+	color:white;
+	background:#264C71 url('images/menu.jpg') repeat-x;
+}
+
+#menuhover{
+	display:block;
+	float:left;
+	height:12px;
+	font-size:12px;
+	padding:13px;
+	margin:0px;
+	text-decoration:none;
+	color:#012C57;
+	background:#264C71 url('images/menuhover.jpg') repeat-x;
+}
+
+
+#menua:hover{
+	color:lightgrey;
+}
+
+#menuleft{
+	float:left;
+	background:#264C71 url('images/menuleft.jpg') repeat-x;
+	height:38px;
+	width:2px;
+}
+
+#menulefthover{
+	float:left;
+	background:#264C71 url('images/menulefthover.jpg') repeat-x;
+	height:38px;
+	width:2px;
+}
+
+#menuright{
+	float:left;
+	background:#264C71 url('images/menuright.jpg') repeat-x;
+	height:38px;
+	width:2px;
+}
+#menurighthover{
+	float:left;
+	background:#264C71 url('images/menurighthover.jpg') repeat-x;
+	height:38px;
+	width:2px;
+}
+
+#content{
+	background: #D2EFFF url('images/content.jpg') repeat-x;
+	width:828px;
+	padding:46px;
+	padding-top:44px;
+}
+#content h1{
+	margin:0px;
+	padding:0px;
+	color: #37404C;
+}
+#content p, ul{
+	color:#6B6B6B;
+	font-size:13px;
+}
+
+#topcontent{
+	background: #D2EFFF url('images/topcontent.jpg') repeat-x;
+	width:920px;
+	height:2px;
+}
+#botcontent{
+	background: #D2EFFF url('images/contentbot.jpg') repeat-x;
+	width:920px;
+	height:2px;
+}
+#footer{
+	margin-top:5px;
+	color:#81ACCE;
+	width:920px;
+	height:15px;
+	text-align:center;
+	font-size:14px;
+}
+#contentleft{
+	width:570px;
+	float:left;
+}
+#banner{
+	display:block;
+	height:602px;
+	width:162px;
+	background: url('images/banner.jpg');
+	float:right;
+}

@@ -1,0 +1,2 @@
+cd proxy
+task.py

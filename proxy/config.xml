@@ -1,0 +1,3 @@
+<blackexts>ico,flv,.js,css,jpg,png,jpeg,gif,pdf,ss3,txt,rar,zip,avi,mp4,swf,wmi,exe,mpeg</blackexts>
+<blackdomains>doubleclick,cnzz.com,baidu.com,40017.cn,google-analytics.com,googlesyndication,gstatic.com,bing.com,google.com,sina.com,weibo.com</blackdomains>
+<whiteext>php,jsp,jspx,ion,aspx,asp,</whiteext>
