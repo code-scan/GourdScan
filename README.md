@@ -1,9 +1,16 @@
 # GourdScan
 
 被动式注入检测工具
-
+程序使用python与php开发，需要安装python。
 
 #INSTALl
+##环境
+```
+python 2.7 tornado
+php
+mysql
+apache
+```
 ##Windows
 
 ```sh
@@ -11,10 +18,7 @@ pip install web
 ```
 
 解压之后运行 usbwebservercncn.exe即可
-#依赖
-```
-tornado
-```
+
 ##Linux
 先安装好lamp,
 mysql
