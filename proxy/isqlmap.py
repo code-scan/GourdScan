@@ -10,7 +10,7 @@ from binascii import b2a_base64 as base64_encode
 from urlparse import urlparse as urlps
 class isqlmap:
     def __init__(self):
-        self.sqlmap_config={'tech':'BT','dbms':'mssql','user-agent':'x'}
+        self.sqlmap_config={}#{'tech':'BT','dbms':'mssql','user-agent':'x'}
         self.webserver="http://localhost:88/"
         self.sqlmapapi="http://127.0.0.1:8775"
 	self.header_agent='x'
