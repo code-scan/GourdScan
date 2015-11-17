@@ -13,7 +13,7 @@ class isqlmap:
         self.sqlmap_config={'tech':'BT','dbms':'mssql','user-agent':'x'}
         self.webserver="http://localhost:88/"
         self.sqlmapapi="http://127.0.0.1:8775"
-		self.header_agent='x'
+	self.header_agent='x'
         try:
             self.update_config()
         except:
