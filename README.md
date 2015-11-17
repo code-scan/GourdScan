@@ -5,7 +5,16 @@
 
 #INSTALl
 ##Windows
+
+```sh
+pip install web
+```
+
 解压之后运行 usbwebservercncn.exe即可
+#依赖
+```
+tornado
+```
 ##Linux
 先安装好lamp,
 mysql
@@ -15,9 +24,10 @@ use pscan;
 source pscan.sql
 ```
 
-web
+
 ```sh
 mv root/* /var/www/html
+pip install web
 ```
 
 修改conn.php中的数据库信息
