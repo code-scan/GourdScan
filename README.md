@@ -14,10 +14,10 @@ apache
 ##Windows
 
 ```sh
-pip install web
+pip install tornado
 ```
 
-解压之后运行 usbwebservercncn.exe即可
+安装wamp，导入数据库
 
 ##Linux
 先安装好lamp,
