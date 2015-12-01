@@ -75,5 +75,8 @@ http://localhost:88/config.php
 
 #使用
 首先运行sqlmapapi，并且在config里面增加一个节点
-其次开启proxy/proxy_io.py
-然后运行proxy/task.py
+```shell
+cd proxy/
+python proxy_io.py 8080&
+python task.py&
+```
