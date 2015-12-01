@@ -2,7 +2,7 @@
 
 被动式注入检测工具
 程序使用python与php开发，需要安装python。
-配合sqlmapapi进行的漏洞检测
+利用sqlmapapi进行漏洞的检测，然后通过浏览器代理方式获取请求，然后对其进行测试
 
 #INSTALl
 ##环境
