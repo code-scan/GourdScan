@@ -81,3 +81,12 @@ cd proxy/
 python proxy_io.py 8080&
 python task.py&
 ```
+然后将浏览器代理设置为
+```
+http 127.0.0.1 8080
+```
+然后一顿请求之后可以打开
+```
+http://localhost:88/config.php
+```
+点击分类进行查看信息了，差不多等待几分钟之后会将请求测试结束，你的节点越多效率就越高。
