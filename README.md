@@ -13,14 +13,15 @@ apache
 ```
 ##Windows
 
-```sh
-pip install tornado
-```
+
 
 安装wamp，导入数据库
 
 ##Linux
 先安装好lamp,
+
+
+
 mysql
 ```sql
 create database pscan;
@@ -31,7 +32,7 @@ source pscan.sql
 
 ```sh
 mv root/* /var/www/html
-pip install web
+pip install tornado
 ```
 
 修改conn.php中的数据库信息
