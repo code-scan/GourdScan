@@ -2,6 +2,7 @@
 
 被动式注入检测工具
 程序使用python与php开发，需要安装python。
+配合sqlmapapi进行的漏洞检测
 
 #INSTALl
 ##环境
