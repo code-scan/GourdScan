@@ -74,7 +74,7 @@ class Backgroup(threading.Thread):
                 self.isqlmap.extract_request(uri,method,headers,body)
                 print "[*] Process Over"
             except Exception,ex:
-                print "[!] Error :"+ex
+                print "[!] Error :",ex
                 pass
 def get_proxy(url):
     url_parsed = urlparse(url, scheme='http')
