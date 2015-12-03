@@ -42,19 +42,19 @@ from isqlmap import isqlmap
 logger = logging.getLogger('tornado_proxy')
 
 __all__ = ['ProxyHandler', 'run_proxy']
-logo=''' 
-   _____                              _ 
+logo='''
+   _____                              _
   / ____|                            | |
  | |  __    ___    _   _   _ __    __| |
  | | |_ |  / _ \  | | | | | '__|  / _` |
  | |__| | | (_) | | |_| | | |    | (_| |
   \_____|  \___/   \__,_| |_|     \__,_|
-                                                
-    Cond0r@Codescan      Ver 2.0                                            
- 
+
+    Cond0r@Codescan      Ver 2.0
+
  '''
-                                                                                         
-print logo                                                                                        
+
+print logo
 class Backgroup(threading.Thread):
     def __init__(self,queue):
         threading.Thread.__init__(self)
@@ -70,8 +70,12 @@ class Backgroup(threading.Thread):
             method=request['method']
             headers=request['headers']
             body=request['body']
-            self.isqlmap.extract_request(uri,method,headers,body)
-            print "[*] Process Over"
+            try:
+                self.isqlmap.extract_request(uri,method,headers,body)
+                print "[*] Process Over"
+            except Exception,ex:
+                print "[!] Error :"+ex
+                pass
 def get_proxy(url):
     url_parsed = urlparse(url, scheme='http')
     proxy_key = '%s_proxy' % url_parsed.scheme
@@ -125,12 +129,12 @@ class ProxyHandler(tornado.web.RequestHandler):
             else:
                 self.set_status(response.code, response.reason)
                 self._headers = tornado.httputil.HTTPHeaders() # clear tornado default header
-                
+
                 for header, v in response.headers.get_all():
                     if header not in ('Content-Length', 'Transfer-Encoding', 'Content-Encoding', 'Connection'):
                         self.add_header(header, v) # some header appear multiple times, eg 'Set-Cookie'
-                
-                if response.body:                   
+
+                if response.body:
                     self.set_header('Content-Length', len(response.body))
                     self.write(response.body)
                     #print 11
@@ -143,14 +147,14 @@ class ProxyHandler(tornado.web.RequestHandler):
         print self.request.headers
         print body
         '''
-        
+
         if not body:
             body = None
         try:
             if 'Proxy-Connection' in self.request.headers:
-                del self.request.headers['Proxy-Connection'] 
-            
-            
+                del self.request.headers['Proxy-Connection']
+
+
             fetch_request(
                 self.request.uri, handle_response,
                 method=self.request.method, body=body,
@@ -163,7 +167,7 @@ class ProxyHandler(tornado.web.RequestHandler):
             request_dict['body']=body
             self.queue.put(request_dict)
             #self.isqlmap.extract_request(self.request.uri,self.request.method,self.request.headers,body)
-            
+
         except tornado.httpclient.HTTPError as e:
             if hasattr(e, 'response') and e.response:
                 handle_response(e.response)
