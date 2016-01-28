@@ -120,7 +120,7 @@ if(@$_POST['action']=='add'){
 						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button> 			<ul class="nav navbar-nav navbar-right">
 						<li class="">
-							<a href="/"></a>
+							<a href="./"></a>
 					</li>
 						<li class="dropdown">
 							 <a href="#" class="navbar-brand" data-toggle="dropdown">GourdScan<strong class="caret"></strong></a>
@@ -150,7 +150,7 @@ if(@$_POST['action']=='add'){
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 					<li class="">
-							<a href="/"></a>
+							<a href="./"></a>
 					</li>
 					<?php 
 					$index='active';
@@ -162,7 +162,7 @@ if(@$_POST['action']=='add'){
 					?>
 					
 						<li class="">
-							<a href="/">Index</a>
+							<a href="./">Index</a>
 						</li>
                         
                         <li class="<?php echo $index?>">
@@ -219,7 +219,7 @@ if(@$_POST['action']=='add'){
 					<tr>
 						<th>
 					
-                            Button(Ôİ²»¿ÉÓÃ)
+                            Button(æš‚ä¸å¯ç”¨)
 						</th>
                      
 					</tr>
@@ -232,10 +232,10 @@ if(@$_POST['action']=='add'){
 						<td>
 						
                    <center>
-                         <a href="/config.php#?action=startproxy" type='submit' disable="true" class="btn btn-default" value="Add....." >¿ªÆô´úÀí</a>
-                         <a href="/config.php#?action=stopproxy" type='submit'  class="btn btn-default" value="Add....." >¹Ø±Õ´úÀí</a>
-                         <a href="/config.php#?action=startupdate" type='submit'  class="btn btn-default" value="Add....." >¹Ø±Õ×Ô¶¯¸üĞÂ</a>
-                         <a href="/config.php#?action=stopupdate" type='submit'  class="btn btn-default" value="Add....." >¿ªÆô×Ô¶¯¸üĞÂ</a>
+                         <a href="config.php#?action=startproxy" type='submit' disable="true" class="btn btn-default" value="Add....." >å¼€å¯ä»£ç†</a>
+                         <a href="config.php#?action=stopproxy" type='submit'  class="btn btn-default" value="Add....." >å…³é—­ä»£ç†</a>
+                         <a href="config.php#?action=startupdate" type='submit'  class="btn btn-default" value="Add....." >å…³é—­è‡ªåŠ¨æ›´æ–°</a>
+                         <a href="config.php#?action=stopupdate" type='submit'  class="btn btn-default" value="Add....." >å¼€å¯è‡ªåŠ¨æ›´æ–°</a>
                          </center>
                         </td>
                 
@@ -298,7 +298,7 @@ if(@$_POST['action']=='add'){
                             1
                         </td>
                         	<td>
-                            <a href="/index.php?hash=<?php echo $user['userhash'];?> ">
+                            <a href="index.php?hash=<?php echo $user['userhash'];?> ">
                         <?php echo $user['userhash'];?>   </a>
                         </td>
                         <td>
