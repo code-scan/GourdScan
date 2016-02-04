@@ -58,7 +58,7 @@ include("conn.php");
 						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button> 			<ul class="nav navbar-nav navbar-right">
 						<li class="">
-							<a href="/"></a>
+							<a href="./"></a>
 					</li>
 						<li class="dropdown">
 							 <a href="#" class="navbar-brand" data-toggle="dropdown">GourdScan<strong class="caret"></strong></a>
@@ -88,7 +88,7 @@ include("conn.php");
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 					<li class="">
-							<a href="/"></a>
+							<a href="./"></a>
 					</li>
 					<?php 
 					$index='active';
@@ -100,7 +100,7 @@ include("conn.php");
 					?>
 					
 						<li class="<?php echo $index?>">
-							<a href="/">Index</a>
+							<a href="./">Index</a>
 						</li>
                         <li>
 							<a href="config.php">Config</a>

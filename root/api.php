@@ -30,7 +30,7 @@ if(@$_GET['type']=='sqlmap'){
     exit();
 }
 if($_GET['type']=='sqlmap_update'){
-    header("Location: /index.php");
+    header("Location: index.php");
 	$data=mysql_query("select * from sqlmap where status not in ('terminated','Inject')");
 	while($row=mysql_fetch_array($data)){
 		$key=$row['key'];
@@ -70,15 +70,15 @@ if($_GET['type']=='sqlmap_update'){
     exit();
 }
 if($_GET['type']=='sqlmap_clear'){
-    header("Location: /index.php");
+    header("Location: index.php");
     mysql_query("delete from sqlmap where status not in ('running','Inject')  and userhash='{$hash}'");
     exit();
 }if($_GET['type']=='sqlmap_clearall'){
-    header("Location: /index.php");
+    header("Location: index.php");
     mysql_query("delete from sqlmap  where status not in ('Inject')  and userhash='{$hash}';");
     exit();
 }if($_GET['type']=='sqlmap_clearvuls'){
-    header("Location: /index.php");
+    header("Location: index.php");
     mysql_query("delete from sqlmap  where status  in ('Inject')  and userhash='{$hash}';");
 	mysql_query("delete from dirscan ;");
     exit();
