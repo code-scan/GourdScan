@@ -4,21 +4,21 @@
 程序使用python与php开发，需要安装python。
 利用sqlmapapi进行漏洞的检测，然后通过浏览器代理方式获取请求，然后对其进行测试
 
-#INSTALl
-##环境
+# INSTALl
+## 环境
 ```
 python 2.7 tornado
 php
 mysql
 apache
 ```
-##Windows
+## Windows
 
 
 
 安装wamp，导入数据库
 
-##Linux
+## Linux
 先安装好lamp,
 
 
@@ -55,7 +55,7 @@ def api_get():
 ```
 改成你的host地址
 
-#配置
+# 配置
 打开 http://localhost:88/config.php 在list里面添加sqlmapapi节点
 
 格式为
@@ -74,7 +74,7 @@ youhash可以随意填写，主要用于分类
 http://localhost:88/config.php
 查看你的分类，点击分类名称即可查看。
 
-#使用
+# 使用
 首先运行sqlmapapi，并且在config里面增加一个节点
 ```shell
 cd proxy/
